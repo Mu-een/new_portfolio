@@ -1,35 +1,48 @@
 <template>
   <NavBar/>
+
+  <!-- ============================landing page ===================================================-->
   <div class="home container-fluid">
     <div class="h1-container-fluid">
       <h1 class="display-1 text-center">Hi! I'm Mu-een Slamat</h1>
       <h2 class="text-center" style="font-size: 40px">Web Developer</h2>
-      <button class="mx-auto d-flex">Download CV</button>
+      <button class="mx-auto d-flex">Download CV <i class="bi bi-download"></i></button>
     </div>
   </div>
 
+  <!-- ================================about me =================================================-->
   <section>
     <div class="about" style="height: 100vh; width: 100vw;">
       <h2 class="display-2 text-center">About Me</h2>
       <div class="aboutMe">
+        <ul class="my-stats text-center mx-auto">
+          <li><i class="bi bi-calendar3"></i> 03/06/1999</li>
+          <li><i class="bi bi-geo"></i> Athlone, Cape Town </li>
+          <li><i class="bi bi-telephone"></i> 083 495 5213</li>
+          <li><i class="bi bi-envelope"></i> mueenslam@gmail.com</li>
+          <li><i class="bi bi-translate"></i> English and Afrikaans speaking</li>
+        </ul>
         <div class="me">
           <img src="https://i.postimg.cc/hGcYjNNN/DSC-3547-1-removebg-preview.png" alt="me" style="max-width: 100%; height: auto;">
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
-          Praesentium placeat nulla obcaecati, culpa nihil modi? Accusantium velit error praesentium optio nisi, impedit 
-          perspiciatis repudiandae, dignissimos eligendi laborum iste modi ducimus!</p>
-        </div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt suscipit consectetur repudiandae deserunt illo,
+           ducimus quas eius veniam quaerat vel voluptatem dicta minus nam fugiat aspernatur dolorem fuga culpa debitis?
+        </p>
+      </div>
     </div>
   </section> 
+  <FooterC/>
 </template>
 
 <script>
 import NavBar from '@/components/NavBar.vue';
+import FooterC from '@/components/FooterC.vue';
 
 export default {
   name: 'HomeView',
   components: {
-    NavBar
+    NavBar,
+    FooterC
   }
 }
 </script>
@@ -39,13 +52,13 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
+/* ===========================landing page ===================================================*/
 .home {
   background: linear-gradient(rgba(101, 100, 100, 0), #ECF2FF), url(https://i.postimg.cc/1tQtnDk7/aaron-burden-Bycd2w-F5v-QU-unsplash.jpg);
   width: 100vw;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
- 
 }
 
 .h1-container-fluid{
@@ -80,6 +93,7 @@ button:active {
   box-shadow: 0.05em 0.05em;
 }
 
+/* =========================== about me section ======================================*/
 .about {
   background-color: #ECF2FF;
   font-family: 'Tajawal', sans-serif;
@@ -87,7 +101,9 @@ button:active {
 
 .aboutMe {
   font-family: 'Outfit', sans-serif;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   background-color: #FBCA1F;
   margin: 100px;
   padding: 100px;
@@ -103,6 +119,23 @@ button:active {
 
 .me {
   margin: 10px;
-  position: absolute;
+  position: relative;
+  clip-path: circle(50% at 50% 50%);
 }
+.me:hover{ 
+  transform: scale(1.10);
+}
+.my-stats {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  margin-left: 50px;
+  /* display: flex; */
+  font-family: 'Outfit', sans-serif;
+}
+
+.my-stats:hover {
+  transform: scale(1.10);
+}
+
 </style>

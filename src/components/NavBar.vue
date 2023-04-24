@@ -15,22 +15,22 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
           <li class="nav-item">
-            <router-link to="/" class="text-dark">Home</router-link>
+            <router-link to="/" class="text-dark">Home <i class="bi bi-house"></i></router-link>
           </li>
-          <li class="nav-item">
+          <!-- <li class="nav-item">
             <router-link to="/about" class="text-dark">About Me</router-link>
+          </li> -->
+          <li class="nav-item">
+            <router-link to="/resume" class="text-dark">Resume <i class="bi bi-file-earmark-person"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/resume" class="text-dark">Resume</router-link>
+            <router-link to="/projects" class="text-dark">Projects <i class="bi bi-card-checklist"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/projects" class="text-dark">Projects</router-link>
+            <router-link to="/testimonials" class="text-dark">Testimonials <i class="bi bi-people"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/testimonials" class="text-dark">Testimonials</router-link>
-          </li>
-          <li class="nav-item">
-            <router-link to="/contact" class="text-dark">Contact Me</router-link>
+            <router-link to="/contact" class="text-dark">Contact <i class="bi bi-chat-left-dots"></i></router-link>
           </li>
         </ul>
       </div>
@@ -60,6 +60,11 @@ ul {
 li {
   padding: 7px;
   list-style-type: none;
+}
+li:hover {
+  transform: scale(1.10);
+  background-color: #ffffff;
+  border-radius: 20px;
 }
 a {
   text-decoration: none;
