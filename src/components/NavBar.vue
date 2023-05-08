@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar navbar-expand-lg container-fluid" style="width: 100vw;">
+  <nav class="navbar navbar-expand-lg container-fluid sticky-navbar" style="width: 100vw;">
     <div class="container-fluid">
       <button
         class="navbar-toggler"
@@ -17,20 +17,20 @@
           <li class="nav-item">
             <router-link to="/" class="text-dark">Home <i class="bi bi-house"></i></router-link>
           </li>
-          <!-- <li class="nav-item">
-            <router-link to="/about" class="text-dark">About Me</router-link>
-          </li> -->
           <li class="nav-item">
-            <router-link to="/resume" class="text-dark">Resume <i class="bi bi-file-earmark-person"></i></router-link>
+            <router-link to="/about" class="text-dark">About Me <i class="bi bi-info-circle"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/projects" class="text-dark">Projects <i class="bi bi-card-checklist"></i></router-link>
+            <router-link to="#resume" class="text-dark">Resume <i class="bi bi-file-earmark-person"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/testimonials" class="text-dark">Testimonials <i class="bi bi-people"></i></router-link>
+            <router-link to="#projects" class="text-dark">Projects <i class="bi bi-card-checklist"></i></router-link>
           </li>
           <li class="nav-item">
-            <router-link to="/contact" class="text-dark">Contact <i class="bi bi-chat-left-dots"></i></router-link>
+            <router-link to="#testimonials" class="text-dark">Testimonials <i class="bi bi-people"></i></router-link>
+          </li>
+          <li class="nav-item">
+            <router-link to="#contact" class="text-dark">Contact <i class="bi bi-chat-left-dots"></i></router-link>
           </li>
         </ul>
       </div>
@@ -71,5 +71,10 @@ a {
   color: #435058;
   font-size: 25px;
   padding: 5px;
+}
+.sticky-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 </style>
