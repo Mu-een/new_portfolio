@@ -4,7 +4,7 @@
   <!-- ============================landing page ===================================================-->
   <div class="home container-fluid">
     <div class="h1-container-fluid">
-      <h1 class="display-1 text-center">I'm Mu-een Slamat</h1>
+      <h1 class="display-1 text-center">I'm <strong>Mu-een Slamat</strong></h1>
       <h2 class="text-center" style="font-size: 40px">A Web Developer</h2>
       <button class="mx-auto d-flex">Download CV <i class="bi bi-download"></i></button>
     </div>
@@ -15,13 +15,6 @@
     <div class="about" style="height: 100vh; width: 100vw;">
       <h2 class="display-2 text-center">About Me</h2>
       <div class="aboutMe">
-        <ul class="my-stats text-center mx-auto">
-          <li><i class="bi bi-calendar3"></i> 03/06/1999</li>
-          <li><i class="bi bi-geo"></i> Athlone, Cape Town </li>
-          <li><i class="bi bi-telephone"></i> 083 495 5213</li>
-          <li><i class="bi bi-envelope"></i> mueenslam@gmail.com</li>
-          <li><i class="bi bi-translate"></i> English and Afrikaans speaking</li>
-        </ul>
         <div class="me">
           <img src="https://i.postimg.cc/hGcYjNNN/DSC-3547-1-removebg-preview.png" alt="me" style="max-width: 100%; height: auto;">
         </div>
@@ -34,15 +27,67 @@
 
   <!-- ============================ resume =============================== -->
   <section id="resume">
-    <div class="resume">
+    <div class="resume " style="height: 100vh;width:100vw">
       <h2 class="display-2 text-center resumeTitle">Resume</h2>
+     
+     <div class=" myResume d-flex">
+
+       <div class="row">
+         <div class="card" style="width: 18rem;border-radius: 23px;">
+       <img src="https://i.postimg.cc/xCsTHnfC/download.png" class="card-img-top mt-3" alt="" style="border-radius: 10px;">
+       <div class="card-body">
+         <h5 class="card-title text-center">Web Development Intern at LC Studio</h5>
+         <p class="card-text text-center ">April 2023 - Present</p>
+       </div>
+     </div>
+   </div>
+   
+   <div class="row">
+     <div class="card" style="width: 18rem;border-radius: 23px;">
+   <img src="https://i.postimg.cc/7hnv7NMN/1565593241244.jpg" class="card-img-top mt-3" alt="" style="border-radius: 10px;">
+   <div class="card-body">
+     <h5 class="card-title text-center">Studied Web Development at Life Choices Coding Academy</h5>
+     <p class="card-text text-center ">October 2022 - March 2023</p>
+   </div>
+   </div>
+   </div>
+   
+   <div class="row">
+     <div class="card" style="width: 18rem;border-radius: 23px;">
+   <img src="https://i.postimg.cc/j2Px1N6W/cisco-networking-academy-logo-1.png" class="card-img-top mt-3" alt="" style="border-radius: 10px;">
+   <div class="card-body">
+     <h5 class="card-title text-center">Studied CCNA and I.T Essentials</h5>
+     <p class="card-text text-center ">2021</p>
+   </div>
+   </div>
+   </div>
+   
+   <div class="row">
+     <div class="card" style="width: 18rem;border-radius: 23px;">
+   <img src="https://i.postimg.cc/fTgbYF3T/download.png" class="card-img-top mt-3" alt="" style="border-radius: 10px;;">
+   <div class="card-body">
+     <h5 class="card-title text-center">Worked at Open Box as a Junior I.T Technician</h5>
+     <p class="card-text text-center ">November 2019 - January 2020</p>
+   </div>
+   </div>
+   </div>
+     </div>
     </div>
+
   </section>
 
   <!-- =================projects ============================================-->
   <section>
     <div class="projects">
       <h2 class="display-2 text-center projectsTitle">Projects</h2>
+      <img src="https://i.postimg.cc/bwSmLJh5/recha-oktaviani-h2a-DKwig-Qe-A-unsplash.jpg" alt="calculator" class="calculatorPic">
+      <p>A JavaScript Calculator</p>
+        <a href="https://mueen-calculator.netlify.app/" target="_blank"><button>View site</button></a>
+
+        <div>
+          <img src="https://i.postimg.cc/T3XLjcvL/joel-muniz-l-UK16p-Jt-CM-unsplash.jpg" alt="" style=" height: 300px;width: auto;">
+          <p>CAPSTONE Project: An E-commerce website selling celebrity boxing events. </p>
+        </div>
     </div>
   </section>
 
@@ -101,16 +146,20 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@700&display=swap');
 
 /* =========================== landing page css ===================================================*/
 .home {
-  background: linear-gradient(rgba(101, 100, 100, 0), #ECF2FF), url(https://i.postimg.cc/1tQtnDk7/aaron-burden-Bycd2w-F5v-QU-unsplash.jpg);
+  background: linear-gradient(rgba(101, 100, 100, 0), #ECF2FF);
   width: 100vw;
   min-height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+h1 strong {
+  color: #FBCA1F;
+}
 .h1-container-fluid{
   position: absolute;
   top: 50%;
@@ -146,7 +195,7 @@ button:active {
 /* =========================== about me section css ======================================*/
 .about {
   background-color: #ECF2FF;
-  font-family: 'Tajawal', sans-serif;
+  font-family: 'Prompt', sans-serif;
 }
 
 .aboutMe {
@@ -175,68 +224,78 @@ button:active {
 .me:hover{ 
   transform: scale(1.10);
 }
-.my-stats {
-  list-style-type: none;
-  margin: 0;
-  padding: 30px;
-  margin-left: 50px;
-  /* display: flex; */
-  font-family: 'Outfit', sans-serif;
-}
-
-.my-stats:hover {
-  transform: scale(1.10);
-}
 
 /* ===================== resume section css ================================ */
 .resume {
-  background: url(https://i.postimg.cc/V6jftJPt/joao-ferrao-4-Yzrc-DNc-RVg-unsplash.jpg) ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-  }
+  background-color: #ECF2FF;
+  background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
+  min-height: 100vh;
+}
 
-  .resumeTitle {
-  font-family: 'Tajawal', sans-serif;
-  }
+.resumeTitle {
+  font-family: 'Prompt', sans-serif;
+}
+.myResume {
+  padding-top: 60px;
+  gap: 100px;
+  margin: auto;
+  justify-content: center;
+}
+.card {
+  width: 190px;
+  height: auto;
+  color: white;
+  background: rgb(46, 44, 44);
+  transition: all 300ms;
+}
+
+.card-body {
+  font-family: 'Outfit', sans-serif;
+}
+.card:hover {
+  transform: scale(1.10);
+}
 
   /* =====================projects section css ================================ */
 .projects {
-  background: url(https://i.postimg.cc/FF8Xh8sw/sigmund-4-UGmm3-WRUo-Q-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #ECF2FF;
+    background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
     min-height: 100vh;
   }
 
   .projectsTitle {
-  font-family: 'Tajawal', sans-serif;
+    font-family: 'Prompt', sans-serif;
   }
+
+ .calculatorPic{
+  height: 300px;
+  width: auto;
+ }
 
    /* =====================testimonials section css ================================ */
 .testimonials {
-  background: url(https://i.postimg.cc/G2FpnRvP/javier-allegue-barros-i5-Kx0-P8-A0d4-unsplash.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: #ECF2FF;
+    background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
     min-height: 100vh;
   }
 
   .testimonialsTitle {
-  font-family: 'Tajawal', sans-serif;
+    font-family: 'Prompt', sans-serif;
   }
 
-  /* ===============contact section css ========================*/
-  @import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
+  /* =============== contact section css ========================*/
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .contactMe {
-  background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff), url(https://i.postimg.cc/0yWkCLj2/elcarito-MHNj-EBe-LTgw-unsplash.jpg);
+  background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 115vh;
+  min-height: 130vh;
 }
 
 .contact {
-  font-family: 'Jost', sans-serif;
+  font-family: 'Prompt', sans-serif;
   padding-top: 20px;
 }
 
