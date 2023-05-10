@@ -4,8 +4,8 @@
   <!-- ============================landing page ===================================================-->
   <div class="home container-fluid">
     <div class="h1-container-fluid">
-      <h1 class="display-1 text-center">I'm <strong>Mu-een Slamat</strong></h1>
-      <h2 class="text-center" style="font-size: 40px">A Web Developer</h2>
+      <h1 class="display-1 text-center text-light">I'm <strong>Mu-een Slamat</strong></h1>
+      <h2 class="text-center text-light" style="font-size: 40px">A Web Developer</h2>
       <button class="mx-auto d-flex">Download CV <i class="bi bi-download"></i></button>
     </div>
   </div>
@@ -13,7 +13,7 @@
   <!-- ================================about me =================================================-->
   <section>
     <div class="about" style="height: 100vh; width: 100vw;">
-      <h2 class="display-2 text-center">About Me</h2>
+      <h2 class="display-2 text-center text-light">About Me</h2>
       <div class="aboutMe">
         <div class="me">
           <img src="https://i.postimg.cc/hGcYjNNN/DSC-3547-1-removebg-preview.png" alt="me" style="max-width: 100%; height: auto;">
@@ -28,12 +28,12 @@
   <!-- ============================ resume =============================== -->
   <section id="resume">
     <div class="resume " style="height: 100vh;width:100vw">
-      <h2 class="display-2 text-center resumeTitle">Resume</h2>
+      <h2 class="display-2 text-center resumeTitle text-light">Resume</h2>
      
      <div class=" myResume d-flex">
 
        <div class="row">
-         <div class="card" style="width: 18rem;border-radius: 23px;">
+         <div class="card bg-light text-dark" style="width: 18rem;border-radius: 23px;">
        <img src="https://i.postimg.cc/xCsTHnfC/download.png" class="card-img-top mt-3" alt="" style="border-radius: 10px;">
        <div class="card-body">
          <h5 class="card-title text-center">Web Development Intern at LC Studio</h5>
@@ -43,7 +43,7 @@
    </div>
    
    <div class="row">
-     <div class="card" style="width: 18rem;border-radius: 23px;">
+     <div class="card bg-light text-dark" style="width: 18rem;border-radius: 23px;">
    <img src="https://i.postimg.cc/7hnv7NMN/1565593241244.jpg" class="card-img-top mt-3" alt="" style="border-radius: 10px;">
    <div class="card-body">
      <h5 class="card-title text-center">Studied Web Development at Life Choices Coding Academy</h5>
@@ -53,7 +53,7 @@
    </div>
    
    <div class="row">
-     <div class="card" style="width: 18rem;border-radius: 23px;">
+     <div class="card bg-light text-dark" style="width: 18rem;border-radius: 23px;">
    <img src="https://i.postimg.cc/j2Px1N6W/cisco-networking-academy-logo-1.png" class="card-img-top mt-3" alt="" style="border-radius: 10px;">
    <div class="card-body">
      <h5 class="card-title text-center">Studied CCNA and I.T Essentials</h5>
@@ -63,7 +63,7 @@
    </div>
    
    <div class="row">
-     <div class="card" style="width: 18rem;border-radius: 23px;">
+     <div class="card bg-light text-dark" style="width: 18rem;border-radius: 23px;">
    <img src="https://i.postimg.cc/fTgbYF3T/download.png" class="card-img-top mt-3" alt="" style="border-radius: 10px;;">
    <div class="card-body">
      <h5 class="card-title text-center">Worked at Open Box as a Junior I.T Technician</h5>
@@ -79,30 +79,39 @@
   <!-- =================projects ============================================-->
   <section>
     <div class="projects">
-      <h2 class="display-2 text-center projectsTitle">Projects</h2>
-      <img src="https://i.postimg.cc/bwSmLJh5/recha-oktaviani-h2a-DKwig-Qe-A-unsplash.jpg" alt="calculator" class="calculatorPic">
-      <p>A JavaScript Calculator</p>
-        <a href="https://mueen-calculator.netlify.app/" target="_blank"><button>View site</button></a>
-
-        <div>
-          <img src="https://i.postimg.cc/T3XLjcvL/joel-muniz-l-UK16p-Jt-CM-unsplash.jpg" alt="" style=" height: 300px;width: auto;">
-          <p>CAPSTONE Project: An E-commerce website selling celebrity boxing events. </p>
+      <h2 class="display-2 text-center projectsTitle text-light">Projects</h2>
+      <div class="card bg-dark text-white">
+        <img src="https://i.postimg.cc/bwSmLJh5/recha-oktaviani-h2a-DKwig-Qe-A-unsplash.jpg" class="card-img calculatorPic" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-dark">JavaScript Calculator</h5>
+          <a href="https://mueen-calculator.netlify.app/" target="_blank"><button>View site</button></a>
         </div>
+      </div>
+
+      <div class="card bg-dark text-white">
+        <img src="https://i.postimg.cc/T3XLjcvL/joel-muniz-l-UK16p-Jt-CM-unsplash.jpg" class="card-img calculatorPic" alt="">
+        <div class="card-img-overlay">
+          <h5 class="card-title text-light">CAPSTONE: Celebrity Boxing Events E-commerce</h5>
+          <a href="https://mueenslamat-capstone-project.web.app/" target="_blank"><button>View site</button></a>
+        </div>
+      </div>
+
     </div>
+
   </section>
 
   <!-- ===================testimonials =======================================-->
   <section>
     <div class="testimonials">
-      <h2 class="display-2 text-center testimonialsTitle">Testimonials</h2>
+      <h2 class="display-2 text-center testimonialsTitle text-light">Testimonials</h2>
     </div>
   </section>
 
   <!-- contact -->
   <div class="contactMe">
     <div class="text-center contact">
-      <h2 class="display-2">Let's talk</h2>
-      <p style="font-size: 30px;">Any questions or remarks? Just write me a message! <i class="bi bi-emoji-smile"></i></p>
+      <h2 class="display-2 text-light">Let's talk</h2>
+      <p style="font-size: 30px;" class="text-light">Any questions or remarks? Just write me a message! <i class="bi bi-emoji-smile"></i></p>
     </div>
     <form action="https://formspree.io/f/xbjeqabp"  method="POST" >
       <div class="mb-3 w-25 mx-auto" style="font-size: 18px;">
@@ -122,8 +131,8 @@
       <button type="submit" class="form-control w-25 mx-auto">Send Message <i class="bi bi-box-arrow-in-right"></i></button>
     </form>
     <ul class="socials text-center mx-auto d-flex">
-      <a href="https://www.linkedin.com/in/mueenslamat/" target="_blank" style="color: black;"><i class="bi bi-linkedin"></i></a>
-      <a href="https://github.com/Mu-een" target="_blank" style="color: black;"><i class="bi bi-github"></i></a>
+      <a href="https://www.linkedin.com/in/mueenslamat/" target="_blank" style="color: white;"><i class="bi bi-linkedin"></i></a>
+      <a href="https://github.com/Mu-een" target="_blank" style="color: white;"><i class="bi bi-github"></i></a>
     </ul>
   </div>
   <FooterC/>
@@ -150,7 +159,7 @@ export default {
 
 /* =========================== landing page css ===================================================*/
 .home {
-  background: linear-gradient(rgba(101, 100, 100, 0), #ECF2FF);
+  background-color: #1C2826;
   width: 100vw;
   min-height: 100vh;
   background-repeat: no-repeat;
@@ -194,7 +203,7 @@ button:active {
 
 /* =========================== about me section css ======================================*/
 .about {
-  background-color: #ECF2FF;
+  background-color: #1C2826;
   font-family: 'Prompt', sans-serif;
 }
 
@@ -227,8 +236,7 @@ button:active {
 
 /* ===================== resume section css ================================ */
 .resume {
-  background-color: #ECF2FF;
-  background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
+  background-color: #1C2826;
   min-height: 100vh;
 }
 
@@ -258,8 +266,7 @@ button:active {
 
   /* =====================projects section css ================================ */
 .projects {
-    background-color: #ECF2FF;
-    background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
+    background-color: #1C2826;
     min-height: 100vh;
   }
 
@@ -269,13 +276,12 @@ button:active {
 
  .calculatorPic{
   height: 300px;
-  width: auto;
+  width: 300px;
  }
 
    /* =====================testimonials section css ================================ */
 .testimonials {
-    background-color: #ECF2FF;
-    background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
+    background-color: #1C2826;
     min-height: 100vh;
   }
 
@@ -288,7 +294,7 @@ button:active {
 @import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
 
 .contactMe {
-  background:  linear-gradient(rgba(101, 100, 100, 0), #ecf2ff);
+  background-color: #1C2826;
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 130vh;
@@ -301,8 +307,7 @@ button:active {
 
 form {
   font-family: 'Outfit', sans-serif;
-  color: black;
-  text-shadow: 2px 2px 2px white;
+  color: #FBCA1F;
 }
 
 button {

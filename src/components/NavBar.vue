@@ -47,10 +47,12 @@ export default {
 </script>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau:wght@700&display=swap');
+
 
 nav {
-  font-family: 'Urbanist', sans-serif;
+  font-family: 'Ysabeau', sans-serif;
   padding: 30px;
   background-color: #ECF2FF;
 }
